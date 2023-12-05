@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ASLoader"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Asynchronous data loading framework."
 
   # This description is used to generate tags and improve search results.
@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+	An asynchronous data loading framework for iOS.
                    DESC
 
   spec.homepage     = "https://github.com/OsheeSan/ASLoader"
@@ -80,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/OsheeSan/ASLoader", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/OsheeSan/ASLoader.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
