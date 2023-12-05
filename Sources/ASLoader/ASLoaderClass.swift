@@ -152,8 +152,7 @@ public class ASLoaderClass {
     ///   - placeholder: A placeholder value to be used while the actual data is being loaded.
     ///   - dataURL: The URL from which data should be loaded.
     ///   - completion: A closure that is called with the loaded data or the placeholder in case of an error.
-    public func loadData(placeholder: Any, dataURL: String, completion: @escaping (Any) -> Void) {
-        completion(placeholder)
+    public func loadData(dataURL: String, completion: @escaping (Any) -> Void) {
         DispatchQueue.global().async {
             if let url = URL(string: dataURL),
                let data = try? Data(contentsOf: url) {

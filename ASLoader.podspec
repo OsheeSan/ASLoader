@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ASLoader"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "Asynchronous data loading framework."
 
   # This description is used to generate tags and improve search results.
