@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ASLoader"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "Asynchronous data loading framework."
 
   # This description is used to generate tags and improve search results.
@@ -73,8 +73,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   spec.platform     = :ios
    spec.platform     = :ios, "15.0"
+   spec.swift_versions = '5.0'
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
