@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ASLoader"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Asynchronous data loading framework."
 
   # This description is used to generate tags and improve search results.
@@ -54,9 +54,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "Anton Babko" => "osheee.san@gmail.com" }
-  # Or just: spec.author    = "Anton Babko"
-  # spec.authors            = { "Anton Babko" => "osheee.san@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Anton Babko"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -81,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/OsheeSan/ASLoader.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/OsheeSan/ASLoader", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,8 +89,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Sources", "Classes/**/*.{h,m,swift}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Sources/**/*.{h,m,swift}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
