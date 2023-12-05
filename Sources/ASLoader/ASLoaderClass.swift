@@ -14,27 +14,22 @@ public class ASLoaderClass {
     
     public init() {}
     
-    /// Enumeration representing different cache types.
-    public enum ASCacheType {
-        case global, primary, main
-    }
-    
     /// NSCache for global image caching.
-    private let globalImagesCache: NSCache<NSString, UIImage> = {
+    public let globalImagesCache: NSCache<NSString, UIImage> = {
         let cache = NSCache<NSString, UIImage>()
         cache.countLimit = 20
         return cache
     }()
     
     /// NSCache for primary image caching.
-    private let primaryImagesCache: NSCache<NSString, UIImage> = {
+    public let primaryImagesCache: NSCache<NSString, UIImage> = {
         let cache = NSCache<NSString, UIImage>()
         cache.countLimit = 20
         return cache
     }()
     
     /// NSCache for main image caching.
-    private let mainImagesCache: NSCache<NSString, UIImage> = {
+    public let mainImagesCache: NSCache<NSString, UIImage> = {
         let cache = NSCache<NSString, UIImage>()
         cache.countLimit = 20
         return cache
